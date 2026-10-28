@@ -1,0 +1,409 @@
+{
+  "years": "2013\u20132021",
+  "boroughs": {
+    "manhattan": {
+      "name": "Manhattan",
+      "inspection_count": 17059,
+      "issues": [
+        {
+          "id": "apparel",
+          "label": "Reflective workwear",
+          "issue_count": 1728,
+          "inspection_count": 17059,
+          "rate": 10.129550383961545,
+          "columns": [
+            "4-Option3",
+            "4-Option4"
+          ]
+        },
+        {
+          "id": "helmet",
+          "label": "Helmet",
+          "issue_count": 1055,
+          "inspection_count": 17059,
+          "rate": 6.18441878187467,
+          "columns": [
+            "4-Option1",
+            "4-Option2"
+          ]
+        },
+        {
+          "id": "bell",
+          "label": "Bell / warning device",
+          "issue_count": 1182,
+          "inspection_count": 17059,
+          "rate": 6.928893839029252,
+          "columns": [
+            "5-Option4",
+            "5-Option5"
+          ]
+        },
+        {
+          "id": "lamps",
+          "label": "Bicycle lights",
+          "issue_count": 1000,
+          "inspection_count": 17059,
+          "rate": 5.86200832405182,
+          "columns": [
+            "5-Option3"
+          ]
+        },
+        {
+          "id": "reflectors",
+          "label": "Tires / reflectors",
+          "issue_count": 811,
+          "inspection_count": 17059,
+          "rate": 4.7540887508060266,
+          "columns": [
+            "5-Option7"
+          ]
+        },
+        {
+          "id": "id",
+          "label": "Worker ID",
+          "issue_count": 733,
+          "inspection_count": 17059,
+          "rate": 4.296852101529984,
+          "columns": [
+            "4-Option5",
+            "4-Option6"
+          ]
+        },
+        {
+          "id": "brakes",
+          "label": "Brakes",
+          "issue_count": 4,
+          "inspection_count": 17059,
+          "rate": 0.02344803329620728,
+          "columns": [
+            "5-Option6"
+          ]
+        }
+      ]
+    },
+    "brooklyn": {
+      "name": "Brooklyn",
+      "inspection_count": 8929,
+      "issues": [
+        {
+          "id": "apparel",
+          "label": "Reflective workwear",
+          "issue_count": 805,
+          "inspection_count": 8929,
+          "rate": 9.015567252771866,
+          "columns": [
+            "4-Option3",
+            "4-Option4"
+          ]
+        },
+        {
+          "id": "helmet",
+          "label": "Helmet",
+          "issue_count": 827,
+          "inspection_count": 8929,
+          "rate": 9.261955426139545,
+          "columns": [
+            "4-Option1",
+            "4-Option2"
+          ]
+        },
+        {
+          "id": "bell",
+          "label": "Bell / warning device",
+          "issue_count": 249,
+          "inspection_count": 8929,
+          "rate": 2.7886661440250866,
+          "columns": [
+            "5-Option4",
+            "5-Option5"
+          ]
+        },
+        {
+          "id": "lamps",
+          "label": "Bicycle lights",
+          "issue_count": 217,
+          "inspection_count": 8929,
+          "rate": 2.430283346399373,
+          "columns": [
+            "5-Option3"
+          ]
+        },
+        {
+          "id": "reflectors",
+          "label": "Tires / reflectors",
+          "issue_count": 166,
+          "inspection_count": 8929,
+          "rate": 1.8591107626833911,
+          "columns": [
+            "5-Option7"
+          ]
+        },
+        {
+          "id": "id",
+          "label": "Worker ID",
+          "issue_count": 230,
+          "inspection_count": 8929,
+          "rate": 2.575876357934819,
+          "columns": [
+            "4-Option5",
+            "4-Option6"
+          ]
+        },
+        {
+          "id": "brakes",
+          "label": "Brakes",
+          "issue_count": 0,
+          "inspection_count": 8929,
+          "rate": 0.0,
+          "columns": [
+            "5-Option6"
+          ]
+        }
+      ]
+    },
+    "bronx": {
+      "name": "Bronx",
+      "inspection_count": 2666,
+      "issues": [
+        {
+          "id": "apparel",
+          "label": "Reflective workwear",
+          "issue_count": 322,
+          "inspection_count": 2666,
+          "rate": 12.078019504876218,
+          "columns": [
+            "4-Option3",
+            "4-Option4"
+          ]
+        },
+        {
+          "id": "helmet",
+          "label": "Helmet",
+          "issue_count": 295,
+          "inspection_count": 2666,
+          "rate": 11.065266316579145,
+          "columns": [
+            "4-Option1",
+            "4-Option2"
+          ]
+        },
+        {
+          "id": "bell",
+          "label": "Bell / warning device",
+          "issue_count": 124,
+          "inspection_count": 2666,
+          "rate": 4.651162790697675,
+          "columns": [
+            "5-Option4",
+            "5-Option5"
+          ]
+        },
+        {
+          "id": "lamps",
+          "label": "Bicycle lights",
+          "issue_count": 115,
+          "inspection_count": 2666,
+          "rate": 4.3135783945986494,
+          "columns": [
+            "5-Option3"
+          ]
+        },
+        {
+          "id": "reflectors",
+          "label": "Tires / reflectors",
+          "issue_count": 71,
+          "inspection_count": 2666,
+          "rate": 2.663165791447862,
+          "columns": [
+            "5-Option7"
+          ]
+        },
+        {
+          "id": "id",
+          "label": "Worker ID",
+          "issue_count": 121,
+          "inspection_count": 2666,
+          "rate": 4.538634658664666,
+          "columns": [
+            "4-Option5",
+            "4-Option6"
+          ]
+        },
+        {
+          "id": "brakes",
+          "label": "Brakes",
+          "issue_count": 0,
+          "inspection_count": 2666,
+          "rate": 0.0,
+          "columns": [
+            "5-Option6"
+          ]
+        }
+      ]
+    },
+    "queens": {
+      "name": "Queens",
+      "inspection_count": 4317,
+      "issues": [
+        {
+          "id": "apparel",
+          "label": "Reflective workwear",
+          "issue_count": 365,
+          "inspection_count": 4317,
+          "rate": 8.454945564049108,
+          "columns": [
+            "4-Option3",
+            "4-Option4"
+          ]
+        },
+        {
+          "id": "helmet",
+          "label": "Helmet",
+          "issue_count": 276,
+          "inspection_count": 4317,
+          "rate": 6.393328700486449,
+          "columns": [
+            "4-Option1",
+            "4-Option2"
+          ]
+        },
+        {
+          "id": "bell",
+          "label": "Bell / warning device",
+          "issue_count": 162,
+          "inspection_count": 4317,
+          "rate": 3.752605976372481,
+          "columns": [
+            "5-Option4",
+            "5-Option5"
+          ]
+        },
+        {
+          "id": "lamps",
+          "label": "Bicycle lights",
+          "issue_count": 103,
+          "inspection_count": 4317,
+          "rate": 2.385916145471392,
+          "columns": [
+            "5-Option3"
+          ]
+        },
+        {
+          "id": "reflectors",
+          "label": "Tires / reflectors",
+          "issue_count": 49,
+          "inspection_count": 4317,
+          "rate": 1.135047486680565,
+          "columns": [
+            "5-Option7"
+          ]
+        },
+        {
+          "id": "id",
+          "label": "Worker ID",
+          "issue_count": 107,
+          "inspection_count": 4317,
+          "rate": 2.478573083159602,
+          "columns": [
+            "4-Option5",
+            "4-Option6"
+          ]
+        },
+        {
+          "id": "brakes",
+          "label": "Brakes",
+          "issue_count": 0,
+          "inspection_count": 4317,
+          "rate": 0.0,
+          "columns": [
+            "5-Option6"
+          ]
+        }
+      ]
+    },
+    "staten-island": {
+      "name": "Staten Island",
+      "inspection_count": 0,
+      "issues": [
+        {
+          "id": "apparel",
+          "label": "Reflective workwear",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "4-Option3",
+            "4-Option4"
+          ]
+        },
+        {
+          "id": "helmet",
+          "label": "Helmet",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "4-Option1",
+            "4-Option2"
+          ]
+        },
+        {
+          "id": "bell",
+          "label": "Bell / warning device",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "5-Option4",
+            "5-Option5"
+          ]
+        },
+        {
+          "id": "lamps",
+          "label": "Bicycle lights",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "5-Option3"
+          ]
+        },
+        {
+          "id": "reflectors",
+          "label": "Tires / reflectors",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "5-Option7"
+          ]
+        },
+        {
+          "id": "id",
+          "label": "Worker ID",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "4-Option5",
+            "4-Option6"
+          ]
+        },
+        {
+          "id": "brakes",
+          "label": "Brakes",
+          "issue_count": 0,
+          "inspection_count": 0,
+          "rate": null,
+          "columns": [
+            "5-Option6"
+          ]
+        }
+      ]
+    }
+  },
+  "source_title": "Commercial Bicycle Unit Inspections (Historical)",
+  "source_url": "https://data.cityofnewyork.us/Transportation/Commercial-Bicycle-Unit-Inspections-Historical-/tg3t-nh4h",
+  "method": "Separate by Borough and retain Question1 = Yes. Count each inspection once per equipment group if any listed option is Yes. Divide by all eligible inspections in that borough. A borough without eligible records has null rates, never a zero-percent estimate. Blank options mean no issue was recorded in that field; they do not prove compliance. Equipment groups can overlap, and businesses can be inspected more than once.",
+  "story_note": "Weekdays organize fictional equipment activities, not the dates of these historical inspections. Fitting equipment changes the scene, never the recorded statistics."
+}

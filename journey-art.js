@@ -1,0 +1,43 @@
+(() => {
+  'use strict';
+  const P={ink:'#304349',paper:'#f1e5c8',light:'#fff2d1',wood:'#a77b59',woodDark:'#79553f',woodLight:'#d0a577',red:'#bd5d46',gold:'#e6ba60',green:'#658b53',metal:'#9cabad',metalDark:'#647a82',blue:'#789eaf'};
+  const pieces={};
+  const rect=(x,y,w,h,fill)=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+(P[fill]||fill)+'"/>';
+  const path=(d,fill)=>'<path d="'+d+'" fill="'+(P[fill]||fill)+'"/>';
+  const add=(id,body,box='0 0 32 32')=>pieces[id]={body,box};
+  add('sandwich',path('M4 7h24v3h2v17H2V10h2z','ink')+rect(4,9,24,5,'woodLight')+rect(4,14,24,3,'green')+rect(4,17,24,4,'red')+rect(4,21,24,4,'paper')+rect(6,10,20,1,'light'));
+  add('burger',path('M9 5h14v2h5v4h3v16h-3v3H4v-3H1V11h3V7h5z','ink')+path('M10 7h12v2h5v3h2v3H3v-3h3V9h4z','gold')+rect(10,9,2,1,'light')+rect(19,10,2,1,'light')+rect(6,12,2,1,'light')+rect(3,16,26,3,'green')+rect(5,19,22,2,'red')+rect(3,21,26,4,'woodDark')+path('M3 26h26v1h-3v1H6v-1H3z','gold'));
+  add('dumplings',rect(1,12,30,18,'ink')+rect(3,15,26,12,'metal')+path('M3 9h2V5h8v4h2v10H3zm14 2h2V7h8v4h2v10H17zM9 23h2v-4h8v4h2v5H9z','ink')+path('M5 9h2V7h4v2h2v8H5zm14 2h2V9h4v2h2v8h-8zM11 23h2v-2h4v2h2v3h-8z','paper')+rect(7,9,2,4,'woodLight')+rect(21,11,2,4,'woodLight')+rect(13,23,2,2,'woodLight'));
+  add('bagel',path('M9 4h14v2h4v4h3v13h-3v4h-4v2H9v-2H5v-4H2V10h3V6h4z','#815837')+path('M10 6h12v2h4v4h2v9h-2v4h-4v2H10v-2H6v-4H4v-9h2V8h4z','#c9975d')+rect(12,11,8,7,'#795137')+rect(5,18,22,3,'paper')+rect(8,8,3,2,'light')+rect(21,10,3,2,'gold')+rect(7,14,2,2,'gold')+rect(21,24,3,1,'woodLight'));
+  add('pasta',path('M2 15h28v6h-3v4h-4v3H9v-3H5v-4H2z','ink')+path('M4 16h24v4h-3v4h-3v2H10v-2H7v-4H4z','paper')+path('M6 11h3V8h5v3h3V7h5v3h4v7H6z','gold')+rect(9,12,13,3,'red')+rect(11,10,3,2,'green')+rect(20,14,3,2,'green'));
+  add('soup',path('M6 4h2v5H6zm7-2h2v7h-2zm7 2h2v5h-2z','metal')+path('M2 13h25v3h4v9h-8v4H7v-4H4v-5H2z','ink')+rect(5,15,19,4,'red')+path('M5 20h19v3h-3v4H8v-4H5z','paper')+rect(26,18,3,4,'paper')+rect(8,16,4,1,'gold')+rect(17,16,3,1,'gold'));
+  add('clippers',path('M8 2h16v6h2v21H6V8h2z','ink')+rect(10,3,12,4,'metal')+rect(11,3,1,3,'ink')+rect(15,3,1,3,'ink')+rect(19,3,1,3,'ink')+rect(8,10,16,17,'red')+rect(10,11,3,14,'#dc8b6d')+rect(15,17,7,4,'paper')+rect(17,18,3,2,'metalDark'));
+  add('towels',rect(3,19,26,10,'ink')+rect(5,20,22,7,'paper')+rect(7,20,2,7,'blue')+rect(3,11,26,9,'ink')+rect(5,12,22,6,'light')+rect(23,12,2,6,'blue')+rect(5,4,22,8,'ink')+rect(7,5,18,5,'paper')+rect(10,5,2,5,'blue'));
+  add('mirror',rect(5,1,22,25,'ink')+rect(7,3,18,21,'wood')+rect(9,5,14,17,'blue')+path('M11 7h7v2h-3v3h-4zm5 6h5v2h-3v3h-2z','light')+rect(14,26,4,3,'ink')+rect(9,29,14,3,'ink'));
+  add('chair',rect(5,2,4,16,'#704b34')+rect(23,2,4,16,'#704b34')+rect(7,3,18,3,'#b28457')+rect(9,10,14,3,'#a8754c')+rect(3,18,26,7,'#785137')+rect(5,18,22,4,'light')+rect(5,23,22,2,'#ae7d50')+rect(5,25,4,7,'#704b34')+rect(23,25,4,7,'#704b34')+rect(9,28,14,2,'#aa7950'));
+  add('flowers',rect(14,14,4,14,'green')+rect(8,22,7,3,'green')+rect(18,19,7,3,'green')+path('M6 8h4V4h6v4h4v6h-4v4h-6v-4H6z','red')+rect(11,9,4,4,'gold')+path('M18 3h4V0h4v3h4v4h-4v4h-4V7h-4z','paper')+rect(23,3,2,4,'gold')+path('M8 27h16v3H8zM10 30h12v2H10z','woodLight'));
+  add('cake',path('M13 0h6v3h4v6h4v8h3v13H2V17h3V9h4V3h4z','#b7a17d')+rect(14,1,4,3,'#d78778')+rect(18,1,3,2,'green')+rect(11,5,10,5,'light')+rect(7,11,18,7,'paper')+rect(4,19,24,9,'light')+rect(7,15,18,1,'#d49b8b')+rect(4,25,24,1,'#d49b8b')+rect(6,21,2,3,'paper')+rect(15,21,2,3,'paper')+rect(24,21,2,3,'paper')+rect(21,27,4,3,'#d78778')+rect(25,26,3,2,'green'));
+  add('carrot',path('M17 1h4v5h3V2h4v8h-6v3h-7V6h2z','green')+path('M13 9h10v8h-4v4h-4v4h-4v4H5v-6h3v-6h5z','ink')+path('M14 11h7v5h-4v4h-4v4H9v3H7v-3h3v-7h4z','#e4913c')+rect(14,13,4,2,'gold')+rect(11,19,4,1,'gold'));
+  add('hotdog-plate',path('M3 21h26v2h3v6h-3v2H3v-2H0v-6h3z','ink')+rect(3,23,26,6,'paper')+path('M4 15h24v2h3v7H1v-7h3z','woodLight')+path('M4 14h24v2h2v4H2v-4h2z','red')+path('M5 13h22v2H5z','gold')+path('M5 16h3v2h4v-2h4v2h4v-2h4v2h3v2h-5v-2h-4v2h-4v-2h-4v2H6v-2H5z','gold'));
+  add('cloche',rect(14,5,4,3,'ink')+path('M6 9h20v2h3v4h2v9h1v6H0v-6h1v-9h2v-4h3z','ink')+path('M7 11h18v2h3v4h1v7H3v-7h1v-4h3z','metal')+rect(7,13,3,9,'paper')+rect(2,26,28,2,'metalDark'));
+  add('flashlight',path('M3 2h26v10h-6v18H9V12H3z','ink')+rect(5,4,22,6,'gold')+rect(7,5,18,3,'light')+rect(11,12,10,16,'metalDark')+rect(13,15,6,4,'red'));
+  add('dinner',path('M9 2h14v6h5v22H4V8h5z','ink')+rect(11,4,10,4,'woodLight')+rect(6,10,20,18,'wood')+rect(8,11,3,14,'woodLight')+rect(13,17,10,7,'paper')+rect(15,18,6,2,'red'));
+  add('camp-table',rect(4,7,4,14,'ink')+rect(28,7,4,14,'ink')+rect(5,9,2,11,'woodDark')+rect(29,9,2,11,'woodDark')+rect(6,16,24,3,'ink')+rect(7,16,22,1,'wood')+path('M2 1h32v2h2v5H0V3h2z','ink')+rect(2,3,32,3,'woodLight')+rect(1,6,34,2,'woodDark')+rect(3,3,30,1,'wood')+rect(3,5,30,1,'wood'),'0 0 36 22');
+  const flashlightSide=()=>path('M0 4h20V2h8V0h4v16h-4v-2h-8v-2H0z','ink')+rect(1,6,18,4,'metalDark')+rect(3,6,12,1,'metal')+rect(22,4,6,8,'gold')+rect(29,2,3,12,'light')+rect(9,7,4,2,'red');
+  add('pigeon',path('M17 3h8v3h3v10h3v10H8v-3H2v-9h9v-4h6z','ink')+path('M18 5h6v10h4v9H10v-9h5v-4h3z','#91a0b1')+rect(17,16,9,8,'#d1d7db')+path('M6 15h10v8H6z','#566d86')+rect(21,7,2,3,'ink')+rect(27,9,5,3,'#e99b3e')+path('M12 27h3v5H9v-2h3zm12 0h3v5h-6v-2h3z','#e99b3e'));
+  add('cart',path('M1 3h8v4h51v18H17v4h37v3H15v-7H12L6 6H1z','ink')+path('M11 9h47v13H16z','metal')+path('M18 10h3v10h-3zm9 0h3v10h-3zm9 0h3v10h-3zm9 0h3v10h-3zm9 0h2v10h-2z','paper')+rect(17,14,39,2,'paper')+rect(17,30,5,5,'ink')+rect(48,30,5,5,'ink'),'0 0 64 36');
+  add('trolley',rect(4,8,56,5,'ink')+rect(6,9,52,2,'woodLight')+rect(7,13,4,17,'metalDark')+rect(53,13,4,17,'metalDark')+rect(11,24,42,4,'wood')+rect(4,29,56,4,'ink')+rect(11,33,6,5,'ink')+rect(47,33,6,5,'ink'),'0 0 64 40');
+  add('barber-trolley',rect(2,1,28,5,'ink')+rect(4,2,24,2,'woodLight')+rect(5,6,3,23,'metalDark')+rect(24,6,3,23,'metalDark')+rect(4,18,24,4,'ink')+rect(6,19,20,2,'wood')+rect(4,29,7,3,'ink')+rect(21,29,7,3,'ink'));
+  add('tray',path('M6 2h36v3h4v13h-4v4H6v-4H2V5h4z','ink')+path('M7 4h34v3h3v9h-4v4H8v-4H4V7h3z','metal')+rect(8,7,32,8,'#c8d2d0')+rect(8,5,32,2,'light')+rect(6,16,36,2,'paper')+rect(8,19,32,1,'metalDark'),'0 0 48 24');
+  add('runway-table',rect(0,4,46,5,'ink')+rect(2,5,42,2,'woodLight')+rect(1,7,44,2,'woodDark')+rect(4,9,4,14,'ink')+rect(38,9,4,14,'ink')+rect(5,10,2,12,'wood')+rect(39,10,2,12,'wood')+rect(8,17,30,2,'woodDark'),'0 0 46 24');
+  add('pumpkins',rect(14,1,4,5,'green')+path('M8 6h16v3h4v4h2v12h-3v4H5v-4H2V13h2V9h4z','ink')+path('M9 8h14v3h4v13h-3v3H8v-3H5V13h2v-3h2z','#d98736')+rect(9,11,3,12,'#efb65b')+rect(14,10,3,14,'#e59b3c')+rect(8,14,4,4,'ink')+rect(20,14,4,4,'ink')+path('M11 21h3v2h4v-2h3v4H11z','ink'));
+  const bannerHooks=rect(3,4,5,3,'gold')+rect(4,7,3,5,'metalDark')+rect(88,4,5,3,'gold')+rect(89,7,3,5,'metalDark');
+  add('banner-hooks',bannerHooks,'0 0 96 32');
+  let bannerLetters='';['1110/1001/1110/1001/1110','111/101/101/101/111','111/101/101/101/111','1/1/1/0/1'].forEach((glyph,i)=>glyph.split('/').forEach((row,y)=>[...row].forEach((cell,x)=>{if(cell==='1')bannerLetters+=rect(29+i*10+x*2,12+y*2,2,2,'light');})));
+  add('costume-banner',bannerHooks+rect(7,7,82,21,'ink')+rect(9,9,78,17,'red')+rect(9,9,78,2,'gold')+rect(10,28,9,3,'red')+rect(77,28,9,3,'red')+bannerLetters,'0 0 96 32');
+  add('flower-stand',rect(3,2,26,5,'woodDark')+rect(5,3,22,2,'paper')+rect(13,7,6,22,'wood')+rect(14,8,2,20,'woodLight')+rect(7,29,18,3,'woodDark'));
+  add('cake-table',rect(4,5,40,4,'woodDark')+rect(6,9,4,23,'woodDark')+rect(38,9,4,23,'woodDark')+path('M2 3h44v5h2v12h-5v-3h-5v-3H10v3H5v3H0V8h2z','paper')+rect(4,4,40,2,'light')+rect(2,10,3,8,'#d6c8ab')+rect(43,10,3,8,'#d6c8ab'),'0 0 48 32');
+  function svg(id){const p=pieces[id];return p?'<svg viewBox="'+p.box+'" preserveAspectRatio="none" aria-hidden="true" shape-rendering="crispEdges">'+p.body+'</svg>':null;}
+  function bag(meal,closed){return '<svg viewBox="0 0 32 40" preserveAspectRatio="none" aria-hidden="true" shape-rendering="crispEdges">'+rect(4,12,24,26,'ink')+rect(6,14,20,22,'wood')+rect(8,15,3,18,'woodLight')+(closed?rect(6,12,20,5,'woodLight')+rect(14,12,4,8,'paper')+path('M11 26h3v3h2v-5h3v-3h3v5h-3v4h-3v3h-4v-3h-1z','green'):rect(6,13,20,3,'woodDark')+rect(9,20,14,13,'paper')+'<g transform="translate(10 21) scale(.375)">'+(pieces[meal]?.body||pieces.sandwich.body)+'</g>')+'</svg>';}
+  window.JourneyArt={svg,bag,rect,path,flashlightSide,palette:P};
+})();
